@@ -1,0 +1,19 @@
+body { font:16px/1.5 sans-serif; color:#fff; margin:0; padding:1em; background-color:#000; }
+
+.alphabet { position:relative; z-index:10; line-height:1; display:grid; margin:4em 0 0 0; padding:0; grid-template-columns: repeat(4, 1fr); }
+.alphabet li { display:block; margin:0; padding:0; text-align:center; }
+.alphabet__letter { display:inline-block; border-radius:0.2em; opacity:0.5; font-size:2em; width:100%; max-width:1.5em; line-height:1; color:inherit; border:none; background:none; padding:0.25em; margin:0; }
+.alphabet__letter--selected { outline:0; opacity:1; background-color:rgba(0,0,0,0.75); }
+
+.pictures--selected { transition: all 0.2s; position:absolute; left:0; top:0; right:0; bottom:0; background-repeat:no-repeat; background-position:center center; background-attachment: fixed; background-size: cover; }
+
+.alphabet__word { font-size:2em; padding:0.25em 1em; border-radius:0 0 0.2em 0.2em; position:absolute; top:0; left:50%; transform: translateX(-50%); display:inline-block; background:#fff; color:#000; font-weight:bold; }
+
+@media only screen and (min-width: 600px) {
+    .alphabet { font-size:2em; }
+}
+
+@media only screen and (min-width: 1000px) {
+    .alphabet { font-size:3em; grid-template-columns: repeat(6, 1fr); }
+    .alphabet__word { font-size:3em; }
+}
