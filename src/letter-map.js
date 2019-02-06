@@ -60,8 +60,8 @@ export default {
         title: 'Electricty'
     },
     f: {
-        url: 'https://images.unsplash.com/photo-1504515303068-d953c9b6eacf',
-        title: 'French'
+        url: 'https://images.unsplash.com/photo-1494778696781-8f23fd5553c4',
+        title: 'Football'
     },
     g: {
         url: 'https://images.unsplash.com/photo-1541600708691-a6e4123f8baa',
